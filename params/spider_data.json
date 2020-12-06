@@ -1,0 +1,46 @@
+{
+    "processor_ldlc": {
+        "url": "https://www.ldlc.com/fiche/PB00387534.html",
+        "request": [{  
+            "cell_type" : "div", 
+            "class" : "modal-stock-web pointer stock stock-9",
+            "string" : true
+        }],
+        "expected_value": "Rupture"
+    },
+    "processor_amd": {
+        "url": "https://www.amd.com/fr/direct-buy/5450881600",
+        "request": [{
+            "cell_type" : "div",
+            "class" : "product-page-description col-flex-lg-5 col-flex-sm-12",
+            "string" : true
+        }],
+        "expected_value": "OUT OF STOCK"
+        
+    },
+    "processor_topachat":{
+        "url": "https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_wpr_puis_ref_est_in20005854.html",
+        "request": [{
+            "cell_type" :       "section",
+            "class" :           "product-sheet eproduct"
+        },
+        {
+            "cell_type" :       "div",
+            "class" :           "availability-mobile"
+        },
+        {
+            "cell_type" :       "span",
+            "string" :          true
+        }
+    ],
+    "expected_value": "Rupture de stock"
+    },
+    "processor_cdiscount":{
+        "url": "https://www.cdiscount.com/informatique/processeurs/processeur-amd-ryzen-9-5950x-am4-4-90-ghz-16/f-10764-100000059wof.html",
+        "request":[{
+            "cell_type" :       "div",
+            "class" :           "fpDesCol pSOutOfStock",
+            "test_presence" :   true
+        }]
+    }
+}
