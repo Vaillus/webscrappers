@@ -50,7 +50,6 @@ class SniperSpider:
             rep = requests.get(self.url, timeout=0.5)
             self.http_string = rep.content.decode("utf8")
             self.http_string = BeautifulSoup(self.http_string, 'html.parser')
-            print(len(self.http_string))
         except:
             self.http_string = "None"
             print(f"Couldn't get {self.url} http string") 
